@@ -16,3 +16,40 @@
   font-weight: lighter;
   color: #003d42;
 }
+
+.links {
+  height: 55px;
+  width: 100%;
+  background-color: #c2decd;
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-links {
+  width: 5rem;
+  height: 5rem;
+  margin: 5rem;
+  text-decoration: none;
+  font-family: "Gelasio", serif;
+  font-size: 1.1rem;
+  color: #003d42;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+
+.home-links:hover {
+  border: 2px solid #003d42;
+  border-radius: 20px;
+  padding: 12px;
+  color: #003d42;
+}
+.active {
+  border: 2px solid seashell;
+  border-radius: 20px;
+  padding: 12px;
+  color: #388087;
+  background-color: seashell;
+}
