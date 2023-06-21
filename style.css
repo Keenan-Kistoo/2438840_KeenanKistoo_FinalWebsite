@@ -58,14 +58,68 @@
 
 .quote-section {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   background: url("textured_background.jpg");
-  margin-top: -0.9%;
+  margin-top: -0.8%;
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
   display: grid;
   align-items: last baseline;
   justify-content: center;
+}
+
+.quote {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  /*font-family: "Merriweather", serif;*/
+  font-family: "Gelasio", serif;
+  font-weight: lighter;
+  color: seashell;
+  font-weight: lighter;
+  background-color: rgba(128, 128, 128, 0.159);
+  border-radius: 1rem;
+  backdrop-filter: blur;
+  padding: 1rem;
+}
+
+/*Footer Elements:*/
+.main-links {
+  display: flex;
+  height: 12rem;
+  width: 100vw;
+
+  background-color: #17484b;
+  justify-content: space-around;
+  align-items: center;
+  place-items: center;
+}
+
+.foot-links {
+  list-style: none;
+  color: seashell;
+  font-family: "Gelasio", serif;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.foot-links:hover {
+  text-decoration: underline;
+}
+.web-links {
+  list-style: none;
+  margin-top: -10%;
+  margin-left: -25%;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+h3.foot-head {
+  font-family: "Gelasio", serif;
+  color: aliceblue;
+  margin-left: 5%;
+  font-size: 1.5rem;
 }
