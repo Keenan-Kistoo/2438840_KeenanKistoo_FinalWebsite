@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
+.home-body {
+  background-color: seashell;
+}
 /*Navigation Bar Styles*/
 .main-head {
   display: flex;
@@ -270,4 +273,59 @@ h3.foot-head {
 
 .blog-desc:hover {
   font-size: 0.95rem;
+}
+
+/*Design Section:*/
+.design-para {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+}
+
+.design-sub-head {
+  font-size: 3rem;
+  margin-bottom: -0.1%;
+  margin-top: -1%;
+}
+
+.design-text {
+  font-size: 1.2rem;
+}
+
+.wireframe {
+  width: 25rem;
+  height: 18rem;
+}
+
+.sep-line {
+  height: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-flow {
+  width: 32rem;
+  height: 23rem;
+  border: #003d42 0.5rem solid;
+}
+
+.inspo-text {
+  font-size: 1.8rem;
+  color: #003d42;
+  transition: all 0.2s linear;
+}
+
+.inspo-text:hover {
+  font-size: 2rem;
+}
+
+#inspo-alter {
+  margin-bottom: 1.2rem;
+}
+
+.wireframe-two {
+  width: 35rem;
+  height: 22rem;
 }
