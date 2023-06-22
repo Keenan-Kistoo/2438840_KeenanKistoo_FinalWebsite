@@ -349,3 +349,22 @@ h3.foot-head {
   font-size: 1.2rem;
   line-height: 2.5rem;
 }
+
+/*Blog Posts:*/
+.blog-para {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+}
+
+.blog-sub-head {
+  font-size: 3rem;
+  margin-bottom: -0.1%;
+  margin-top: -1%;
+}
+
+.blog-text {
+  font-size: 1.2rem;
+}
