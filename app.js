@@ -23,3 +23,27 @@ function SetNavBar(count) {
   </ul>
   </section>`;
 }
+
+let blogSection = document.querySelector(".blog");
+let ready = false;
+const GenBlogPosts = () => {
+  blogSection.innerHTML = blogInfo
+    .map((blogPost) => {
+      const { icon, link, heading, desc, date, dataCode } = blogPost;
+      return `<article class="blog-post">
+    <img
+      src="${icon}"
+      alt=""
+      class="blog-img"
+    />
+    <a data-week="${dataCode}" href="${link}" class="blog-head">${heading}</a>
+    <p class="blog-desc">
+      ${desc}
+    </p>
+    <p class="blog-date">${date}</p>
+  </article>`;
+    })
+    .join("");
+  ready = true;
+  //console.log(ready);
+};
