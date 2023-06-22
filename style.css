@@ -123,3 +123,151 @@ h3.foot-head {
   margin-left: 5%;
   font-size: 1.5rem;
 }
+
+/*Blog Page*/
+.info {
+  width: 100%;
+  margin: 0;
+  color: #003d42;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 8px;
+  text-align: center;
+  margin-top: -1%;
+  background-color: #b7e8e7;
+}
+.blog-display {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  row-gap: 1rem;
+  background-color: seashell;
+  margin-top: 12rem;
+  transform: translate(-100%);
+  display: grid;
+  grid-template-rows: 15rem;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.blog-display-post {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.blog-sub-head {
+  font-size: 3rem;
+  margin-bottom: -0.1%;
+  margin-top: -1%;
+}
+
+.filter-buttons-sect {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: 1;
+  width: 40vw;
+  height: 1rem;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 2%;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+  font-size: 1.2rem;
+}
+
+.button-hover {
+  background-color: #c2decd;
+  transition: 0.2ms all linear;
+  color: #003d42;
+  font-size: 1.2rem;
+}
+
+.button-hover:hover {
+  background-color: #003d42;
+  color: #c2decd;
+  cursor: pointer;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 100vw;
+  height: 20rem;
+  justify-items: center;
+  align-items: center;
+}
+.blog-post {
+  height: 15rem;
+  width: 40vw;
+  margin: 1rem;
+  background-color: rgba(218, 210, 203, 0.482);
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 33% 33% 33%;
+  justify-items: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.blog-img {
+  width: 10rem;
+  background-color: rgba(228, 215, 208, 0.482);
+  border-radius: 1rem;
+  padding: 0.25rem;
+  margin-left: 2rem;
+  grid-row: 2;
+}
+
+.blog-date {
+  grid-column: 2;
+  grid-row: 3;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  margin-top: -1.5rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.blog-date:hover {
+  font-size: 0.8rem;
+}
+
+.blog-head {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: "Merriweather", serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #003d42;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: -3rem;
+  transition: all 0.3s linear;
+}
+
+.blog-head:hover {
+  font-weight: bold;
+}
+
+.blog-desc {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  font-size: 0.85rem;
+  color: #194e53;
+  transition: all 0.2s linear;
+}
+
+.blog-desc:hover {
+  font-size: 0.95rem;
+}
