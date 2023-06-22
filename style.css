@@ -329,3 +329,23 @@ h3.foot-head {
   width: 35rem;
   height: 22rem;
 }
+
+/*Portfolio Section:*/
+.port-para {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+}
+
+.port-sub-head {
+  font-size: 3rem;
+  margin-bottom: -0.1%;
+  margin-top: -1%;
+}
+
+.port-text {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
