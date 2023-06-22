@@ -19,7 +19,7 @@ function SetNavBar(count) {
     <li>
       <a class="${details[count].classPort}" href="portfolio.html">Portfolio</a>
     </li>
-    <li><a class="${details[count].classEssay}" href="essays.html">Essays</a></li>
+    <li><a class="${details[count].classEssay}" href="essay.html">Essays</a></li>
   </ul>
   </section>`;
 }
