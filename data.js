@@ -98,15 +98,7 @@ const blogInfo = [
     date: "April 7, 2023",
     dataCode: "week-7",
   },
-  {
-    id: 6,
-    icon: "wwwIcon.png",
-    link: "blog-post7.html",
-    heading: "WEEK #08 - Reflection on Website submission",
-    desc: "My thoughts post first submission.",
-    date: "April 21, 2023",
-    dataCode: "week-8",
-  },
+
   {
     id: 7,
     icon: "wwwIcon.png",
@@ -142,15 +134,6 @@ const blogInfo = [
       "WEEK #12 - Reflecting on the lack of inclusivity in our daily lives",
     desc: "I reflect on the reading and discuss how I believe inclusivity can be achieved.",
     date: "May 19, 2023",
-    dataCode: "week-10",
-  },
-  {
-    id: 11,
-    icon: "wwwIcon.png",
-    link: "blog-post12.html",
-    heading: "WEEK #13 - Research task",
-    desc: "I reflect on the reading and discuss how I believe inclusivity can be achieved.",
-    date: "May 23, 2023",
     dataCode: "week-10",
   },
 ];
