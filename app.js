@@ -6,6 +6,7 @@ function SetNavBar(count) {
   const { title, classOne, classTwo, classThree, classFour } = details;
   navBar.innerHTML = `<section class="heading">
   <h1 class="main-head">${details[count].title}</h1>
+  
   </section>
   <section class="tabs">
   <!--Container-->
@@ -48,62 +49,67 @@ const GenBlogPosts = () => {
   ready = true;
   //console.log(ready);
 };
+avail = false;
+if (avail) {
+  let allButton = document.getElementById("all-button");
 
-let allButton = document.getElementById("all-button");
+  allButton.addEventListener("click", function (event) {
+    GenBlogPosts();
+  });
 
-allButton.addEventListener("click", function (event) {
-  GenBlogPosts();
-});
+  const blogSect = document.querySelector(".blog");
+  const genBlogSemOne = () => {
+    const filteredPosts = blogInfo.filter(
+      (post) => post.id >= 0 && post.id < 6
+    );
 
-const blogSect = document.querySelector(".blog");
-const genBlogSemOne = () => {
-  const filteredPosts = blogInfo.filter((post) => post.id >= 0 && post.id < 6);
-
-  blogSect.innerHTML = filteredPosts
-    .map((post) => {
-      const { icon, link, heading, desc, date, dataCode } = post;
-      return `<article class="blog-post">
+    blogSect.innerHTML = filteredPosts
+      .map((post) => {
+        const { icon, link, heading, desc, date, dataCode } = post;
+        return `<article class="blog-post">
     <img src="${icon}" alt="" class="blog-img" />
     <a data-week="${dataCode}" href="${link}" class="blog-head">${heading}</a>
     <p class="blog-desc">${desc}</p>
     <p class="blog-date">${date}</p>
   </article>`;
-    })
-    .join("");
-};
+      })
+      .join("");
+  };
 
-let semOne = document.getElementById("first-button");
+  let semOne = document.getElementById("first-button");
 
-semOne.addEventListener("click", genBlogSemOne);
+  semOne.addEventListener("click", genBlogSemOne);
 
-const genBlogSemTwo = () => {
-  const filteredPosts = blogInfo.filter((post) => post.id >= 6 && post.id < 12);
+  const genBlogSemTwo = () => {
+    const filteredPosts = blogInfo.filter(
+      (post) => post.id >= 6 && post.id < 12
+    );
 
-  blogSect.innerHTML = filteredPosts
-    .map((post) => {
-      const { icon, link, heading, desc, date, dataCode } = post;
-      return `<article class="blog-post">
+    blogSect.innerHTML = filteredPosts
+      .map((post) => {
+        const { icon, link, heading, desc, date, dataCode } = post;
+        return `<article class="blog-post">
     <img src="${icon}" alt="" class="blog-img" />
     <a data-week="${dataCode}" href="${link}" class="blog-head">${heading}</a>
     <p class="blog-desc">${desc}</p>
     <p class="blog-date">${date}</p>
   </article>`;
-    })
-    .join("");
-};
+      })
+      .join("");
+  };
 
-let semTwo = document.getElementById("second-button");
+  let semTwo = document.getElementById("second-button");
 
-semTwo.addEventListener("click", genBlogSemTwo);
+  semTwo.addEventListener("click", genBlogSemTwo);
 
-//Generate Homepage Info:
-let homeInfo = document.querySelector(".info-sect");
+  //Generate Homepage Info:
+  let homeInfo = document.querySelector(".info-sect");
 
-const GenWebInfo = () => {
-  homeInfo.innerHTML = homeData
-    .map((homeDisplay) => {
-      const { title, img, link, desc } = homeDisplay;
-      return `<section class="home-info">
+  const GenWebInfo = () => {
+    homeInfo.innerHTML = homeData
+      .map((homeDisplay) => {
+        const { title, img, link, desc } = homeDisplay;
+        return `<section class="home-info">
     <h2 class="sub-head">
       <a class="head-link" id="blog-tab" href="${link}"
         >${title}</a
@@ -120,6 +126,14 @@ const GenWebInfo = () => {
       ${desc}
     </p>
   </section>`;
-    })
-    .join("");
-};
+      })
+      .join("");
+  };
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  function OpenMenu() {
+    let menu = document.querySelector(".options");
+    menu.className = "options-tab show-menu";
+  }
+});
