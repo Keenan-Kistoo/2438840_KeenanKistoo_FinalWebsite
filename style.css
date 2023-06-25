@@ -375,6 +375,12 @@ h3.foot-head {
   font-size: 1.2rem;
 }
 
+.essay-text {
+  font-size: 1.5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 /*Homepage Information:*/
 .info-sect {
   /*background-color: grey;*/
