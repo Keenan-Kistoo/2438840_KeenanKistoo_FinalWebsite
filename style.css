@@ -515,6 +515,20 @@ h3.foot-head {
   height: 2.5rem;
   align-items: center;
 }
+
+.x-btn {
+  margin-left: 49%;
+  margin-top: 10%;
+  background-color: transparent;
+  border: none;
+  transition: all 0s linear;
+}
+
+.x-btn:hover {
+  border: #003d42 0.2rem solid;
+  border-radius: 5rem;
+  cursor: pointer;
+}
 @media screen and (max-width: 1560px) and (orientation: landscape) {
   .head-link {
     font-size: 2rem;
