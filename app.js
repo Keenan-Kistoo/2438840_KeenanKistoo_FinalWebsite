@@ -24,6 +24,7 @@ function SetNavBar(count) {
   </section>`;
 }
 
+//Blog post code:
 let blogSection = document.querySelector(".blog");
 let ready = false;
 const GenBlogPosts = () => {
@@ -94,3 +95,31 @@ const genBlogSemTwo = () => {
 let semTwo = document.getElementById("second-button");
 
 semTwo.addEventListener("click", genBlogSemTwo);
+
+//Generate Homepage Info:
+let homeInfo = document.querySelector(".info-sect");
+
+const GenWebInfo = () => {
+  homeInfo.innerHTML = homeData
+    .map((homeDisplay) => {
+      const { title, img, link, desc } = homeDisplay;
+      return `<section class="home-info">
+    <h2 class="sub-head">
+      <a class="head-link" id="blog-tab" href="${link}"
+        >${title}</a
+      >
+    </h2>
+    <img
+      class="home-image"
+      id="blog-image"
+      src="${img}"
+      alt="Blog image"
+    />
+
+    <p class="desc" >
+      ${desc}
+    </p>
+  </section>`;
+    })
+    .join("");
+};

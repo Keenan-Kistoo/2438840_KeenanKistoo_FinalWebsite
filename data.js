@@ -158,26 +158,26 @@ const blogInfo = [
 const homeData = [
   {
     title: "Blog Section",
-    link: "/HTML/blogs.html",
-    img: "/Icons/blog.png",
+    link: "blog.html",
+    img: "./2438840_KeenanKistoo_FinalWebsite/icons/blog.png",
     desc: "Discussions, reflections and thoughts during my first semester of Interactive Media III in 2023.",
   },
   {
     title: "Design Section",
-    link: "/HTML/design.html",
-    img: "/Icons/design.png",
+    link: "design.html",
+    img: "./2438840_KeenanKistoo_FinalWebsite/icons/design.png",
     desc: "My thought process when designing this website.",
   },
   {
     title: "Portfolio",
-    link: "/HTML/portfolio.html",
-    img: "/Icons/profile.png",
+    link: "portfolio.html",
+    img: "./2438840_KeenanKistoo_FinalWebsite/icons/profile.png",
     desc: "A bit of information about myself and also the work that I am particularly proud of.",
   },
   {
     title: "Essay Section",
-    link: "/HTML/essays.html",
-    img: "/Icons/essay.png",
+    link: "essay.html",
+    img: "./2438840_KeenanKistoo_FinalWebsite/icons/essay.png",
     desc: "The essays that I have completed during this semester.",
   },
 ];
