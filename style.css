@@ -5,6 +5,9 @@
   background-color: seashell;
 }
 /*Navigation Bar Styles*/
+.tabs {
+  transform: translate(0);
+}
 .main-head {
   display: flex;
   text-align: center;
@@ -37,10 +40,10 @@
   margin: 5rem;
   text-decoration: none;
   font-family: "Gelasio", serif;
-  font-size: 1.1rem;
   color: #003d42;
   text-transform: capitalize;
   transition: all 0.3s linear;
+  font-size: 1.1rem;
 }
 
 .home-links:hover {
@@ -450,6 +453,68 @@ h3.foot-head {
   align-items: center;
 }
 
+/*Responsive Menu:*/
+.options-tab {
+  height: 100%;
+  width: 100%;
+  background-color: #c2decd;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transform: translate(-100%);
+}
+
+.show-menu {
+  transform: translate(0);
+}
+
+.res-link {
+  height: 100vw;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(5);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.res-a {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Gelasio", serif;
+  color: #003d42;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  padding: 1%;
+}
+
+.res-a:hover {
+  border-radius: 2rem;
+  border: 1px solid #003d42;
+  text-decoration: none;
+  background-color: seashell;
+}
+
+.burger-btn {
+  height: 3rem;
+  width: 3rem;
+  float: right;
+  margin-top: -2.5%;
+  margin-right: 2%;
+  background-color: transparent;
+  border: none;
+}
+
+.burger-btn:hover {
+  cursor: pointer;
+}
+
+.burger-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+}
 @media screen and (max-width: 1560px) and (orientation: landscape) {
   .head-link {
     font-size: 2rem;
@@ -474,5 +539,8 @@ h3.foot-head {
   }
   .quote {
     font-size: 3.5rem;
+  }
+  .sub-head {
+    margin-top: 4%;
   }
 }
