@@ -449,3 +449,30 @@ h3.foot-head {
   grid-row: 2;
   align-items: center;
 }
+
+@media screen and (max-width: 1560px) and (orientation: landscape) {
+  .head-link {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .info-sect {
+    height: 60rem;
+    width: 80vw;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 1rem;
+  }
+  .head-link {
+    font-size: 2.5rem;
+  }
+  .home-image {
+    height: 10rem;
+    margin-top: 1%;
+    padding: 5%;
+  }
+  .quote {
+    font-size: 3.5rem;
+  }
+}
