@@ -454,7 +454,33 @@ h3.foot-head {
 }
 
 /*Responsive Menu:*/
+@keyframes fade-in {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes fade-out {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
 .options-tab {
+  height: 100%;
+  width: 100%;
+  background-color: #c2decd;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transform: translate(-100%);
+  animation: fade-out 0.7s ease-out;
+}
+.options {
   height: 100%;
   width: 100%;
   background-color: #c2decd;
@@ -465,6 +491,7 @@ h3.foot-head {
 }
 
 .show-menu {
+  animation: fade-in 0.7s ease-in;
   transform: translate(0);
 }
 
