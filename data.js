@@ -91,7 +91,7 @@ const blogInfo = [
   },
   {
     id: 5,
-    icon: "wwwIcon.png",
+    icon: "light-bulb.png",
     link: "blog-post6.html",
     heading: "WEEK #07 - FINAL THOUGHTS ON MY WEBSITE",
     desc: "I discuss my website and some of the concepts that I have worked with throughout my progress.",
@@ -101,7 +101,7 @@ const blogInfo = [
 
   {
     id: 7,
-    icon: "wwwIcon.png",
+    icon: "reading.png",
     link: "blog-post8.html",
     heading: "WEEK #09 - Writing a close reading",
     desc: "This was a challenging task for me as I often ramble on when writing but, I now see the importance of active reading.",
@@ -110,7 +110,7 @@ const blogInfo = [
   },
   {
     id: 8,
-    icon: "wwwIcon.png",
+    icon: "tech.png",
     link: "blog-post9.html",
     heading: "WEEK #10 - Technocolonialism",
     desc: "I discuss technocolonialism as a whole.",
@@ -119,7 +119,7 @@ const blogInfo = [
   },
   {
     id: 9,
-    icon: "wwwIcon.png",
+    icon: "timer-new.png",
     link: "blog-post10.html",
     heading: "WEEK #11 - Website Progress",
     desc: "I fell behind during this week and the blog post was based more on my website reading.",
@@ -128,7 +128,7 @@ const blogInfo = [
   },
   {
     id: 10,
-    icon: "wwwIcon.png",
+    icon: "earth.png",
     link: "blog-post11.html",
     heading:
       "WEEK #12 - Reflecting on the lack of inclusivity in our daily lives",

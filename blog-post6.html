@@ -9,6 +9,9 @@
   <body class="home-body" onload="SetNavBar(4)">
     <header class="nav-head">
       <nav class="nav-bar"></nav>
+      <button class="opt-btn" onclick="OpenMenu()">
+        <img src="burger-icon.png" alt="Menu" class="burger-img" />
+      </button>
     </header>
     <main class="main-body">
       <article class="blog-para">
@@ -57,7 +60,9 @@
         </p>
       </article>
       <section class="options">
-        <button class="x-btn"><img src="xIcon.png" alt="" /></button>
+        <button class="x-btn" onclick="CloseMenu()">
+          <img src="xIcon.png" alt="" />
+        </button>
         <ul class="res-link">
           <a class="res-a" href="index.html">Homepage</a
           ><a class="res-a" href="blog.html">Blog Section</a
@@ -70,6 +75,5 @@
     <footer class="footer"></footer>
     <script src="data.js"></script>
     <script src="app.js"></script>
-    <script src="menu.js"></script>
   </body>
 </html>

@@ -6,9 +6,12 @@
     <title>Design Section</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="home-body" onload="SetNavBar(1)">
+  <body class="home-body" onload="SetNavBar(1), SetBool(false)">
     <header class="nav-head">
       <nav class="nav-bar"></nav>
+      <button class="opt-btn" onclick="OpenMenu()">
+        <img src="burger-icon.png" alt="Menu" class="burger-img" />
+      </button>
     </header>
     <main class="design-main">
       <article class="design-para">
@@ -197,7 +200,9 @@
         <img src="divider-line.png" alt="Divider Line" class="sep-line" />
       </article>
       <section class="options">
-        <button class="x-btn"><img src="xIcon.png" alt="" /></button>
+        <button class="x-btn" onclick="CloseMenu()">
+          <img src="xIcon.png" alt="" />
+        </button>
         <ul class="res-link">
           <a class="res-a" href="index.html">Homepage</a
           ><a class="res-a" href="blog.html">Blog Section</a
@@ -211,5 +216,4 @@
   </body>
   <script src="data.js"></script>
   <script src="app.js"></script>
-  <script src="menu.js"></script>
 </html>

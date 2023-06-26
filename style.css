@@ -547,6 +547,21 @@ h3.foot-head {
   cursor: pointer;
 }
 
+.opt-btn {
+  height: 3rem;
+  width: 3rem;
+  float: right;
+  margin-top: -2.5%;
+  margin-right: 2%;
+  background-color: transparent;
+  border: none;
+  transform: translate(-10000%);
+}
+
+.opt-btn:hover {
+  cursor: pointer;
+}
+
 .burger-img {
   width: 2.5rem;
   height: 2.5rem;
@@ -601,7 +616,10 @@ h3.foot-head {
     transform: translate(0);
     margin-top: -5.5%;
   }
-
+  .opt-btn {
+    transform: translate(0);
+    margin-top: -7%;
+  }
   .tabs {
     transform: translate(-1000%);
   }
@@ -639,6 +657,11 @@ h3.foot-head {
 
 @media screen and (max-width: 800px) {
   .burger-btn {
+    transform: translate(0);
+    margin-top: -7%;
+  }
+
+  .opt-btn {
     transform: translate(0);
     margin-top: -7%;
   }

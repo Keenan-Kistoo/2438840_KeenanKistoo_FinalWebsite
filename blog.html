@@ -9,6 +9,11 @@
   <body class="home-body" onload="SetNavBar(0), GenBlogPosts()">
     <header class="nav-head">
       <nav class="nav-bar"></nav>
+      <section>
+        <button class="opt-btn" onclick="OpenMenu()">
+          <img src="burger-icon.png" alt="Menu" class="burger-img" />
+        </button>
+      </section>
     </header>
     <main class="main-body">
       <h1 class="info">
@@ -34,7 +39,9 @@
       </section>
       <section class="blog"></section>
       <section class="options">
-        <button class="x-btn"><img src="xIcon.png" alt="" /></button>
+        <button class="x-btn" onclick="CloseMenu()">
+          <img src="xIcon.png" alt="" />
+        </button>
         <ul class="res-link">
           <a class="res-a" href="index.html">Homepage</a
           ><a class="res-a" href="blog.html">Blog Section</a
